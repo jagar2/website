@@ -1,32 +1,24 @@
-- title: General Information
+- title: Assistant Professor Department of Mechanical Engineering and Mechanics
   type: map
   contents:
     - name: Full Name
-      value: Albert Einstein
-    - name: Date of Birth
-      value: 14th March 1879
-    - name: Languages
-      value: English, German
+      value: Joshua C. Agar
+    - name: e-mail
+      value: jca92@drexel.edu
 
 - title: Education
   type: time_table
   contents:
-    - title: PhD
-      institution: University of Zurich, Zurich, Switzerland
-      year: 1905
+    - title: Postdoctoral Fellow
+      institution: University of California Berkeley
+      year: 2018
       description:
-        - Description 1.
-        - Description 2.
-        - title: Description 3.
-          contents:
-            - Sub-description 1.
-            - Sub-description 2.
-    - title: Federal teaching diploma
-      institution: Eidgenössische Technische Hochschule, Zurich, Switzerland
-      year: 1900
+        Machine learning methods for materials microscopy
+    - title: Ph.D. 
+      institution: University of Illinois at Urbana-Champaign
+      year: 2015
       description:
-        - Description 1.
-        - Description 2.
+        Synthesis and characterization of functional ferroelectrics
 
 - title: Experience
   type: time_table
