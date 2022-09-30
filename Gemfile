@@ -18,6 +18,7 @@ group :jekyll_plugins do
     gem 'unicode_utils'
     gem 'webrick'
     gem 'jekyll-github-metadata'
+    gem 'jekyll-regex-replace'
 end
 group :other_plugins do
     gem 'feedjira'
