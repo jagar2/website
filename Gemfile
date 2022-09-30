@@ -14,10 +14,10 @@ group :jekyll_plugins do
     gem 'jekyll-sitemap'
     gem 'jekyll-twitter-plugin'
     gem 'jemoji'
-    # gem 'mini_racer', '>=0.2.1'
+    gem 'mini_racer', '>=0.2.1'
     gem 'unicode_utils'
     gem 'webrick'
-    # gem 'jekyll-github-metadata'
+    gem 'jekyll-github-metadata'
 end
 group :other_plugins do
     gem 'feedjira'
