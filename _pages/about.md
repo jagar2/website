@@ -2,14 +2,15 @@
 layout: about
 title: about
 permalink: /
-subtitle: <a href='#'>Drexel University Department of Mechanical Engineering and Mechanics</a>. Address. Contacts. Moto. Etc.
+subtitle: <a href='#'>Drexel University Department of Mechanical Engineering and Mechanics</a>. 
 
 profile:
   align: right
-  image: Drexel_M3_logo.png
+  image: m3_logo.png
   image_circular: false # crops the image to make it circular
   address: >
-    <p>555 your office number</p>
+    <p>Professor Joshua C. Agar</p>
+    <p><a>jca92@drexel.edu</a></p>
     <p>3141 Chestnut Street</p>
     <p>Philadelphia, PA 19104</p>
 
