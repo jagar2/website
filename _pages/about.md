@@ -14,17 +14,23 @@ profile:
     <p>3141 Chestnut Street</p>
     <p>Philadelphia, PA 19104</p>
 
-news: true  # includes a list of news items
+news: false  # includes a list of news items
 selected_papers: true # includes a list of papers marked as "selected={true}"
 social: true  # includes social icons at the bottom of the page
 ---
 
-Write your biography here. Tell the world about yourself. Link to your favorite [subreddit](http://reddit.com). You can put a picture in, too. The code is already in, just name your picture `prof_pic.jpg` and put it in the `img/` folder.
+We are diverse creatives who apply computational methods to experimentally realize, characterize, and understand functional materials for energy conversion, sensing, next-generation computing and the overall betterment of society.
 
-Put your address / P.O. box / other info right below your picture. You can also disable any these elements by editing `profile` property of the YAML header of your `_pages/about.md`. Edit `_bibliography/papers.bib` and Jekyll will render your [publications page](/al-folio/publications/) automatically.
+We strive for convergent research in:
 
-Link to your social media connections, too. This theme is set up to use [Font Awesome icons](http://fortawesome.github.io/Font-Awesome/) and [Academicons](https://jpswalsh.github.io/academicons/), like the ones below. Add your Facebook, Twitter, LinkedIn, Google Scholar, or just disable all of them.
+* Eptixial Synthesis of Complex-Oxides
+* Multimodial and Multifrequncy Spectroscopies
+* Physics Inspired, Constrained, and Conforming Machine Learning
+* Heterogeneous Computing
 
+<h1>News</h1> 
+
+<a class="twitter-timeline" href="https://twitter.com/m3_learning?ref_src=twsrc%5Etfw">Tweets by m3_learning</a> <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
 
 <a href="assets/img/publication_preview/brownian-motion.gif" data-lightbox="image-1" data-title="1978 Yamaha XS750">
   <img width="100" src="assets/img/publication_preview/brownian-motion.gif"/>
