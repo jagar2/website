@@ -1,16 +1,20 @@
 # al-folio
 <!-- ALL-CONTRIBUTORS-BADGE:START - Do not remove or modify this section -->
-[core_contributors]: https://img.shields.io/badge/core_contributors-3-orange.svg 'Number of core contributors'
+[maintainers]: https://img.shields.io/badge/maintainers-3-success.svg 'Number of maintainers'
 <!-- ALL-CONTRIBUTORS-BADGE:END -->
 
 [![deploy](https://github.com/alshedivat/al-folio/actions/workflows/deploy.yml/badge.svg)](https://github.com/alshedivat/al-folio/actions/workflows/deploy.yml)
 [![demo](https://img.shields.io/badge/theme-demo-brightgreen.svg)](https://alshedivat.github.io/al-folio/)
 [![GitHub contributors](https://img.shields.io/github/contributors/alshedivat/al-folio.svg)](https://github.com/alshedivat/al-folio/graphs/contributors/)
-[![Core Contributors][core_contributors]](#core-contributors-)
+[![Maintainers][maintainers]](#maintainers)
 [![GitHub release](https://img.shields.io/github/v/release/alshedivat/al-folio)](https://github.com/alshedivat/al-folio/releases/latest)
 [![GitHub license](https://img.shields.io/github/license/alshedivat/al-folio?color=blue)](https://github.com/alshedivat/al-folio/blob/master/LICENSE)
 [![GitHub stars](https://img.shields.io/github/stars/alshedivat/al-folio)](https://github.com/alshedivat/al-folio)
 [![GitHub forks](https://img.shields.io/github/forks/alshedivat/al-folio)](https://github.com/alshedivat/al-folio/fork)
+
+[![Docker Image Version](https://img.shields.io/docker/v/amirpourmand/al-folio?sort=semver&label=docker%20image&color=blueviolet)](https://hub.docker.com/r/amirpourmand/al-folio)
+[![Docker Image Size](https://img.shields.io/docker/image-size/amirpourmand/al-folio?sort=date&label=docker%20image%20size&color=blueviolet)](https://hub.docker.com/r/amirpourmand/al-folio)
+[![Docker Pulls](https://img.shields.io/docker/pulls/amirpourmand/al-folio?color=blueviolet)](https://hub.docker.com/r/amirpourmand/al-folio)
 
 A simple, clean, and responsive [Jekyll](https://jekyllrb.com/) theme for academics.
 If you like the theme, give it a star!
@@ -78,6 +82,7 @@ Feel free to add your own page(s) by sending a PR.
 <a href="https://lbugnon.github.io" target="_blank">★</a>
 <a href="https://joahannes.github.io" target="_blank">★</a>
 <a href="https://dominikstrb.github.io" target="_blank">★</a>
+<a href="https://tylerbarna.com" target="_blank">★</a>
 </td>
 </tr>
 <tr>
@@ -184,7 +189,7 @@ Now, feel free to customize the theme however you like (don't forget to change t
 > Note: this approach is only necessary if you would like to build an older or very custom version of al-folio.
 
 First, download the necessary modules and install them into a docker image called `al-folio:Dockerfile` (this command will build an image which is used to run your website afterwards. Note that you only need to do this step once. After you have the image, you no longer need to do this anymore):
-  
+
 
 ```bash
 $ ./bin/docker_build_image.sh  
@@ -403,7 +408,7 @@ If the entry matches one of the combinations of the last names and the first nam
 <details><summary>(click to expand) <strong>Buttons (through custom bibtex keywords):</strong></summary>
 
 There are several custom bibtex keywords that you can use to affect how the entries are displayed on the webpage:
-   
+
 - `abbr`: Adds an abbreviation to the left of the entry. You can add links to these by creating a venue.yaml-file in the _data folder and adding entries that match.
 - `abstract`: Adds an "Abs" button that expands a hidden text field when clicked to show the abstract text
 - `arxiv`: Adds a link to the Arxiv website (Note: only add the arxiv identifier here - the link is generated automatically)
@@ -416,9 +421,10 @@ There are several custom bibtex keywords that you can use to affect how the entr
 - `poster`: Adds a "Poster" button redirecting to a specified file (if a full link is not specified, the file will be assumed to be placed in the /assets/pdf/ directory)
 - `slides`: Adds a "Slides" button redirecting to a specified file (if a full link is not specified, the file will be assumed to be placed in the /assets/pdf/ directory)
 - `website`: Adds a "Website" button redirecting to the specified link
-   
+- `altmetric`: Adds an [Altmetric](https://www.altmetric.com/) badge (Note: only add the altmetric identifier here - the link is generated automatically)
+
 You can implement your own buttons by editing the bib.html file.
-   
+
 </details>
 
 ---
@@ -445,9 +451,9 @@ To do this, edit the collections in the `_config.yml` file, create a correspondi
 
 The theme allows you to create blog posts in the [distill.pub](https://distill.pub/) style:
 
-<p align="center"><a href="https://alshedivat.github.io/al-folio/blog/2018/distill/" target="_blank"><img src="https://raw.githubusercontent.com/alshedivat/al-folio/master/assets/img/distill-screenshot.png" width=700></a></p>
+<p align="center"><a href="https://alshedivat.github.io/al-folio/blog/2021/distill/" target="_blank"><img src="https://raw.githubusercontent.com/alshedivat/al-folio/master/assets/img/distill-screenshot.png" width=700></a></p>
 
-For more details on how to create distill-styled posts using `<d-*>` tags, please refer to [the example](https://alshedivat.github.io/al-folio/blog/2018/distill/).
+For more details on how to create distill-styled posts using `<d-*>` tags, please refer to [the example](https://alshedivat.github.io/al-folio/blog/2021/distill/).
 
 #### Full support for math & code
 
@@ -500,9 +506,13 @@ You may also use the following codes for displaying this in any other pages.
 ```
 
 #### Theming
-Six beautiful theme colors have been selected to choose from.
-The default is purple, but you can quickly change it by editing `$theme-color` variable in the `_sass/_themes.scss` file.
+A variety of beautiful theme colors have been selected for you to choose from.
+The default is purple, but you can quickly change it by editing the
+`--global-theme-color` variable in the `_sass/_themes.scss` file.
 Other color variables are listed there as well.
+The stock theme color options available can be found at `_sass/variables.scss`.
+You can also add your own colors to this file assigning each a name for ease of
+use across the template.
 
 #### Social media previews
 **al-folio** supports preview images on social media.
@@ -527,7 +537,7 @@ Before you get started, please take a look at [the guidelines](CONTRIBUTING.md).
 If you would like to improve documentation, add your webpage to the list below, or fix a minor inconsistency or bug, please feel free to send a PR directly to `master`.
 For more complex issues/bugs or feature requests, please open an issue using the appropriate template.
 
-### Core Contributors
+### Maintainers
 
 <!-- ALL-CONTRIBUTORS-LIST:START - Do not remove or modify this section -->
 <!-- prettier-ignore-start -->
