@@ -545,12 +545,13 @@ footer.sticky-bottom {
       }
       .links {
         a.btn {
-          color: var(--global-text-color);
-          border: 1px solid var(--global-text-color);
+          color: rgb(255, 198, 0);
+          border: 0.5px solid rgb(255, 198, 0);
           padding-left: 1rem;
           padding-right: 1rem;
           padding-top: 0.25rem;
           padding-bottom: 0.25rem;
+          background-color: rgb(0, 41, 108);
           &:hover {
             color: var(--global-theme-color);
             border-color: var(--global-theme-color);
